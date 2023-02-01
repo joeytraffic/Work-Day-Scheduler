@@ -28,27 +28,131 @@ $(function () {
     var fourPM = document.getElementById('hour-16');
     var fivePM = document.getElementById('hour-17');
 
+    var times = [nineAM, tenAM, elevenAM, twelvePM, onePM, twoPM, threePM, fourPM, fivePM];
+
+    console.log(times.slice(0, 1, 2, 3, 4, 5));
+
     if (currentTime < 9) {
       return;
     } else if (currentTime === 9) {
-      return;
+      nineAM.setAttribute('present');
+      nineAM.classList.remove('future');
+      nineAM.classList.add('papresentst');
     } else if (currentTime ===  10) {
-      return;
+      nineAM.classList.remove('future');
+      nineAM.classList.add('past');
+      tenAM.classList.remove('future');
+      tenAM.classList.add('present');
     } else if (currentTime === 11) {
-      return;
+      nineAM.classList.remove('future');
+      nineAM.classList.add('past');
+      tenAM.classList.remove('future');
+      tenAM.classList.add('past');
+      elevenAM.classList.remove('future');
+      elevenAM.classList.add('present');
     } else if (currentTime === 12) {
-      return;
+      nineAM.classList.remove('future');
+      nineAM.classList.add('past');
+      tenAM.classList.remove('future');
+      tenAM.classList.add('past');
+      elevenAM.classList.remove('future');
+      elevenAM.classList.add('past');
+      twelvePM.classList.remove('future');
+      twelvePM.classList.add('present');
     } else if (currentTime === 13) {
-      return;
+      nineAM.classList.remove('future');
+      nineAM.classList.add('past');
+      tenAM.classList.remove('future');
+      tenAM.classList.add('past');
+      elevenAM.classList.remove('future');
+      elevenAM.classList.add('past');
+      twelvePM.classList.remove('future');
+      twelvePM.classList.add('past');
+      onePM.classList.remove('future');
+      onePM.classList.add('present');
     } else if (currentTime === 14) {
-      return;
+      nineAM.classList.remove('future');
+      nineAM.classList.add('past');
+      tenAM.classList.remove('future');
+      tenAM.classList.add('past');
+      elevenAM.classList.remove('future');
+      elevenAM.classList.add('past');
+      twelvePM.classList.remove('future');
+      twelvePM.classList.add('past');
+      onePM.classList.remove('future');
+      onePM.classList.add('past');
+      twoPM.classList.remove('future');
+      twoPM.classList.add('present');
     } else if (currentTime === 15) {
-      return;
+      nineAM.classList.remove('future');
+      nineAM.classList.add('past');
+      tenAM.classList.remove('future');
+      tenAM.classList.add('past');
+      elevenAM.classList.remove('future');
+      elevenAM.classList.add('past');
+      twelvePM.classList.remove('future');
+      twelvePM.classList.add('past');
+      onePM.classList.remove('future');
+      onePM.classList.add('past');
+      twoPM.classList.remove('future');
+      twoPM.classList.add('past');
+      threePM.classList.remove('future');
+      threePM.classList.add('present');
     } else if (currentTime === 16) {
-      return;
+      nineAM.classList.remove('future');
+      nineAM.classList.add('past');
+      tenAM.classList.remove('future');
+      tenAM.classList.add('past');
+      elevenAM.classList.remove('future');
+      elevenAM.classList.add('past');
+      twelvePM.classList.remove('future');
+      twelvePM.classList.add('past');
+      onePM.classList.remove('future');
+      onePM.classList.add('past');
+      twoPM.classList.remove('future');
+      twoPM.classList.add('past');
+      threePM.classList.remove('future');
+      threePM.classList.add('past');
+      fourPM.classList.remove('future');
+      fourPM.classList.add('present');
     } else if (currentTime === 17) {
-      return;
-    } else if (currentTimeParsed > 17) {
+      nineAM.classList.remove('future');
+      nineAM.classList.add('past');
+      tenAM.classList.remove('future');
+      tenAM.classList.add('past');
+      elevenAM.classList.remove('future');
+      elevenAM.classList.add('past');
+      twelvePM.classList.remove('future');
+      twelvePM.classList.add('past');
+      onePM.classList.remove('future');
+      onePM.classList.add('past');
+      twoPM.classList.remove('future');
+      twoPM.classList.add('past');
+      threePM.classList.remove('future');
+      threePM.classList.add('past');
+      fourPM.classList.remove('future');
+      fourPM.classList.add('past');
+      fivePM.classList.remove('future');
+      fivePM.classList.add('present');
+    } else if (currentTime > 17) {
+      nineAM.classList.remove('future');
+      nineAM.classList.add('past');
+      tenAM.classList.remove('future');
+      tenAM.classList.add('past');
+      elevenAM.classList.remove('future');
+      elevenAM.classList.add('past');
+      twelvePM.classList.remove('future');
+      twelvePM.classList.add('past');
+      onePM.classList.remove('future');
+      onePM.classList.add('past');
+      twoPM.classList.remove('future');
+      twoPM.classList.add('past');
+      threePM.classList.remove('future');
+      threePM.classList.add('past');
+      fourPM.classList.remove('future');
+      fourPM.classList.add('past');
+      fivePM.classList.remove('future');
+      fivePM.classList.add('past');
       return;
     }
     // TODO: Add code to get any user input that was saved in localStorage and set
